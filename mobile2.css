@@ -1,115 +1,45 @@
 body {
-  /* overflow: hidden; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url("assets/mob2.png") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #121822;
+  width: 100vw;
   margin: 0;
   padding: 0;
-  /* -webkit-font-smoothing: antialiased; */
-  /* -moz-osx-font-smoothing: grayscale; */
-  /* background: url("assets/back1.png") no-repeat left top; */
-  /* background-size: cover; */
-  /* background-attachment: fixed; */
 }
 .root {
-  /* position: fixed; */
-  display: flex;
-  width: 100vw;
-  /* height: 100vh; */
-  min-height:100%;
-  background: #1A1A7A;
-  background-size: cover;
-}
-.logo {
-  position: absolute;
-  width: 157px;
-  height: 42px;
-  left: 56px;
-  top: 44px;
-  z-index: 10;
-}
-.carContainer {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-}
-.car {
-  height: 80vh;
-  z-index: 99;
-}
-.footerContainer {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  width: 100vw;
-  height: 98vh;
-}
-.footer {
-  z-index: 999;
-  margin-left: 10px;
-}
-.leftContainer {
-  height: 100vh;
-  min-height: 100%;
-  width: 50.5vw;
-  background: url("assets/cyty1.png") no-repeat left top;
-  background-size: cover; 
-  background-attachment: fixed;
-  z-index: 3;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  width: 100vw;
+  min-height: 100%;
+  z-index: -1;
 }
-.text1 {
-  margin: 0;
-  margin-bottom: 5%;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 29px;
-  line-height: 144.2%;
-  text-transform: capitalize;
-  color: #FFFFFF;
-  z-index: 5;
-  margin-left: 15%;
-  width: 65%;
+.logo {
+  margin-top: 30px;
+  z-index: 10;
 }
-.text2 {
-  margin: 0;
-  margin-bottom: 2%;
-  font-family: Khula;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 48px;
-  color: #FFFFFF;
-  z-index: 5;
-  margin-left: 15%;
+.carContainer{
+  display: none;
 }
-.text3 {
-  margin: 0;
-  font-family: Khula;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 144.2%;
-  color: #FFFFFF;
-  z-index: 5;
-  margin-left: 15%;
-  width: 50%;
+.car {
+  display: none;
 }
-.label {
-  display: flex;
-  margin-top: 20px;
-  margin-left: 15%;
+.footerContainer {
+  display: none;
 }
-.radio {
-  opacity: 0.5;
+.footer {
+  display: none;
 }
-.textConteiner {
+.leftContainer {
+  display: none;
+}
+
+.textConteiner2 {
   padding: 0;
-  margin-left: 11px;
+  margin: 0;
+  width: 70vw;
 }
 .text {
   margin: 0;
@@ -119,44 +49,69 @@ body {
   font-size: 16px;
   line-height: 144.2%;
   color: rgba(255, 255, 255, 0.7);
-  width: 70%;
 }
-
-
 
 .rightContainer {
   height: 100vh;
-  width: 49.5vw;
-  background: #277FFF;
-  display: flex;
-  justify-content: flex-end;
+  width: 100vw;
+  min-width: 100vw;
+  background: none;
 }
 .infos {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background: #277FFF;
-  box-shadow: 0px 0px 87.18px rgba(0, 0, 0, 0.12);
-  width: 50%;
+  width: 100vw;
+  min-width: 100vw;
   height: 100vh;
   z-index: 999;
   padding: 5% 0;
   box-sizing: border-box;
 
 }
+.backButtonContainer {
+  position: absolute;
+  left: 10%;
+  top: 30px;
+  width: 100vw;
+  z-index: 999;
+}
+.backButton {
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+}
+.step2 {
+  display: none;
+}
+.step3 {
+  padding-top: 10px;
+}
 .header {
-  font-family: Khula;
+  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 30px;
-  line-height: 48px;
+  font-size: 20px;
+  line-height: 144.2%;
+  text-transform: capitalize;
   color: #FFFFFF;
 }
 .inputLine {
   display: flex;
   justify-content: space-evenly;
-  width: 100%;
+  width: 100vw;
+}
+.label3 {
+  display: flex;
+  width: 90vw;
+  margin-top: 15px;
+  padding-left: 5%;
+  box-sizing: border-box;
 }
 
 .name {
@@ -170,15 +125,12 @@ body {
   font-size: 15px;
   line-height: 144.2%;
   color: #FFFFFF;
-  width: 30%;
+  width: 80vw;
 }
 .name::placeholder {  
   color: rgba(255, 255, 255, 0.2);
   /* color: #FFFFFF; */
 }
-
-
-
 
 .lable2 {
   font-family: Khula;
@@ -187,7 +139,7 @@ body {
   font-size: 15px;
   line-height: 144.2%;
   color: #FFFFFF;
-  width: 70%;
+  width: 80vw;
   margin-top: 20px;
 }
 .input {
@@ -201,6 +153,7 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 144.2%;
+  width: 80%;
 }
 .input::placeholder {  
   color: rgba(255, 255, 255, 0.2);
@@ -219,13 +172,8 @@ option {
   outline: none;
   border: 0;
 }
-.container {
-  display: flex;
-  flex-direction: column;
-}
-.step2 {
-  display: none;
-}
+
+
 
 .button {
   display: flex;
@@ -233,7 +181,7 @@ option {
   align-items: center;
   /* outline: none; */
   background: none;
-  width: 100%;
+  width: 80vw;
   height: 56.91px;
   cursor: pointer;
   border: 1px solid #FFFFFF;
@@ -251,10 +199,51 @@ option {
 }
 .link {
   text-decoration: none;
-  width: 70%;
+  width: 80vw;
   margin-top: 40px;
 }
 
-#mobilButton {
-  display: none;
+.textConteiner2 {
+  padding: 0;
+  margin-left: 40px;
+  /* width: 100v; */
+}
+.radio2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  border: 1px solid #5C5C5C;
+  box-sizing: border-box;
+  background-clip: content-box;
+  background-color: #5C5C5C;
+  border-radius: 50%;
+  outline: none;
+  position: absolute;
+  /* margin-left: -5px;   */
+}
+.radio2:checked {
+ -webkit-appearance: none;
+ -moz-appearance: none;
+ appearance: none;
+ display: inline-block;
+ width: 20px;
+ height: 20px;
+ padding: 2px;
+ border: 1px solid #fff;
+ box-sizing: border-box;
+ background-clip: content-box;
+ background-color: #fff;
+ border-radius: 50%;
+ outline: none;
+ -webkit-border-radius: 50%;
+ -moz-border-radius: 50%;
+ -ms-border-radius: 50%;
+ -o-border-radius: 50%;
+}
+.radio2:active {
+ opacity: 0.5;
 }

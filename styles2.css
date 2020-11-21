@@ -51,6 +51,16 @@ body {
   z-index: 999;
   margin-left: 10px;
 }
+.step2 {
+  /* padding-top: 10px; */
+}
+.step3 {
+  display: none;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
 .leftContainer {
   height: 100vh;
   min-height: 100%;
@@ -145,7 +155,6 @@ body {
   z-index: 999;
   padding: 5% 0;
   box-sizing: border-box;
-
 }
 .backButtonContainer {
   width: 75%;
